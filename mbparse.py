@@ -1,55 +1,59 @@
 #! /usr/bin/python
 import sys
 import mailbox
+import  email 
 import networkx as nx
 import matplotlib.pyplot as plt
 from collections import defaultdict
-import re
-import chardet
 import community
-import diffFrom
 import simplejson
+import datetime
+from fromdiff import fromdiff
+import time
 
+#FIXME make this dynamic
 
-
-# my files
-from miscLibs import *
-
-def clusterNames(peopleDict):
-    """ get a dictionary with id:["real name","email"] and compare
-    all the combinations between name and email for every couple
-    of users and find the combination with highest similarity """
-
-    fromDiff = defaultdict(list)
-    for left,firstData in peopleDict.items():
-        for right,secondData in peopleDict.items():
-            differenceScore = 0
-            #exclude domain from comparisons
-            for x in firstData[:-1]:
-                for y in secondData[:-1]:
-                    r = diffString(x.encode('ascii', 'ignore'),
-                            y.encode('ascii', 'ignore'), algorithm="WW")
-                    if differenceScore < r:
-                        differenceScore = r
-            fromDiff[left].append((r, right))
-    for s,d in fromDiff.items():
-        mindiff =  sorted(d, key=lambda x: x[0])[0]
-        if mindiff[0] > 0.3:
-            print s, mindiff
-     
-def parseMboxFragment(mbox):
+def parseMboxFragment(mbox, names_dictionary):
     mbGraph = nx.DiGraph()
     idMap = set()
     messageDict = {}
     peopleDict = {}
-    arrivedInfo = 0 
+    arrivedInfo = 0
+    peopleDict = {}
+    try:
+        f = open(names_dictionary, "r")
+        peopleDict = simplejson.load(f)
+    except IOError:
+        print "The json file", names_dictionary, "can not be opened"
+    except:
+        print "The json file", names_dictionary, "has some format problems"
+
+    earliest_message_date = ""
+    earliest_message_date_s = ""
+    latest_message_date = ""
+    latest_message_date_s = ""
     for message in mbox:
-        #FIXME ascii is the only way to have tk drow the graph, not utf-8
-        # but this can interfere with names clustering
-        fromField = unicode(message["From"], 
+        # ascii is the only way to have tk draw the graph, not utf-8
+        fromField = unicode(message["From"],
                 'ISO-8859-2').encode('ascii', 'ignore')
-        peopleDict[fromField] = parseAddress(fromField)
+
+        # the alias dictionary is in the form:
+        # From_ascii_string: [[match_score, match_kind],
+        #                     [name1, user1, domain1],
+        #                     [name2, user2, domain2],
+        #                     matching_From_ascii_string]
+
+        if fromField in peopleDict:
+            fromField = peopleDict[fromField][3]
         messageID = message['Message-ID']
+        messageDate = time.mktime(email.utils.parsedate(message["Date"]))
+        if not earliest_message_date or messageDate < earliest_message_date:
+            earliest_message_date = messageDate
+            earliest_message_date_s = message["Date"]
+        elif not latest_message_date or messageDate > latest_message_date:
+            latest_message_date = messageDate
+            latest_message_date_s = message["Date"]
+
         messageDict[messageID] = fromField
         if fromField not in idMap:
             idMap.add(fromField)
@@ -61,8 +65,8 @@ def parseMboxFragment(mbox):
         try:
             replyTo = message['In-Reply-To']
             replyUser = messageDict[replyTo]
-        except KeyError: 
-            mbGraph.node[fromField]["threadStarted"] += 1 
+        except KeyError:
+            mbGraph.node[fromField]["threadStarted"] += 1
 
         if replyUser != "":
             found = False
@@ -74,138 +78,168 @@ def parseMboxFragment(mbox):
                     break
             if not found:
                 # the link goes from the one that receives the response
-                # the one that responds
-                mbGraph.add_edge(replyUser, fromField, weight = 1)
+                # to the one that responds
+                mbGraph.add_edge(replyUser, fromField, weight=1)
                 arrivedInfo += 1
     # il message-id e' unico di ogni messaggio
     # In-Reply-To e' l'id del messaggio a cui si risponde
     # nelle References c'e' la sequenza di messaggi fino a quello
-    nx.draw(mbGraph)
-    #plt.show()
-    #FIXME we have to apply clusterNames before the rest
-    #clusterNames(peopleDict)
+    # nx.draw(mbGraph)
+    # plt.show()
     outDegreeDict = {}
     inDegreeDict = {}
     infoRank = {}
     emailSent = {}
+    lone_nodes = 0
     for n in mbGraph:
         outDegreeDict[n] = mbGraph.out_degree(n, weight="weight")
-        print n, outDegreeDict[n], arrivedInfo
         ts = mbGraph.node[n]["threadStarted"]
-        inDegreeDict[n] = mbGraph.in_degree(n, weight="weight") 
+        inDegreeDict[n] = mbGraph.in_degree(n, weight="weight")
+        if inDegreeDict[n] == 0:
+            lone_nodes += 1
         emailSent[n] = ts + inDegreeDict[n]
-        #all the information sent by node n / total information sent
+        # all the information sent by node n / total information sent
         infoRank[n] = float(outDegreeDict[n])/arrivedInfo
-    print
-    print "Sent information"
-    print
-    for k,v in sorted(outDegreeDict.items(), key=lambda x: x[1])[-10:]:
-        print k,v
-    print
-    print "Received Information"
-    print
-    for k,v in sorted(inDegreeDict.items(), key=lambda x: x[1])[-10:]:
-        print k,v
-    print
-    print "Sent emails"
-    print
-    for k,v in sorted(emailSent.items(), key=lambda x: x[1])[-10:]:
-        print k,v
-    print
-    print "Info ranking"
-    print
-    infoSum = 0
-    for k,v in sorted(infoRank.items(), key=lambda x: x[1]):
-        print k,v
-        infoSum += v
-    print "InfoSum", infoSum
+    c = nx.betweenness_centrality(nx.Graph(mbGraph))
+    print "# node".ljust(30), ",", "centrality".ljust(10)
+    for p in sorted(c.items(), key=lambda x: -x[1]):
+        parsed_fields = fromdiff.parse_address(p[0])
+        from_f = parsed_fields[1] + "@" + parsed_fields[2]
+        print from_f.ljust(30), ",", str(p[1]).ljust(10)
+    print "# tot num messages", len(messageDict)
+    print "# tot num replies", arrivedInfo
+    print "# first email:", earliest_message_date_s
+    print "# last email:", latest_message_date_s
+    print "# num senders:", len(mbGraph)
+    print "# num senders without answer:", lone_nodes
+
+    return mbGraph
 
 
-def getPartitions(mbGraph):
-    unMbGraph = nx.Graph()
-    for n in mbGraph.nodes():
-        unMbGraph.add_node(n)
-        for neigh in mbGraph[n]:
-            unMbGraph.add_node(neigh)
-            if neigh in unMbGraph[n]:
-                unMbGraph.edges(n,neigh)["weight"] \
-                        += mbGraph[n][neigh]["weight"]
-            else:
-                unMbGraph.add_edge(n, neigh, 
-                        weight=mbGraph[n][neigh]["weight"])
+def getMLRelevance(graph):
+    received_anwers = defaultdict(int)
+    tot_w = 0
+    for node in graph.nodes(data=True):
+        parsed_fields = fromdiff.parse_address(node[0])
+        from_f = parsed_fields[1] + "@" + parsed_fields[2]
+        for e in graph.in_edges(node[0], data=True):
+            received_anwers[from_f] += e[2]['weight']
+            tot_w += e[2]['weight']
+    print "# person".ljust(30), ",", "relevance".ljust(10)
+    s_l = sorted(received_anwers.items(), key=lambda x: -x[1])
+    for p, w in s_l:
+        print p.ljust(30), ",", str(float(w)/tot_w).ljust(10)
+    print ""
+    print ""
+    print "# person".ljust(30), ",", "cumulative  relevance".ljust(10)
+    for idx, (p, w) in enumerate(s_l):
+        print p.ljust(30), ",", str(float(sum([x[1] for x in s_l[:idx+1]]))/tot_w).ljust(10)
+    print ""
+    print ""
 
-    partition = community.best_partition(unMbGraph)
-    communities =  set(partition.values())
-    drawGraph = nx.Graph()
+
+def getCommunities(diGraph):
+
+    # community detection works on undirected graphs, so we pick for each
+    # neighbor couple the link with the highest weight. A person A that
+    # receives a lot of information (i.e. asnwer to a lot of emails) from
+    # a person B, is considere in B's community.
+    graph = nx.Graph()
+    for node in diGraph.nodes():
+        graph.add_node(node)
+        for neigh in diGraph.neighbors(node):
+            edge_weight = diGraph.edges(node, neigh)[0][2]["weight"]
+            try:
+                reverse_weight = diGraph.edges(neigh, node)[0][2]["weight"]
+            except IndexError:
+                reverse_weight = 0
+            graph.add_edge(node, neigh,
+                           {"weight": max(edge_weight, reverse_weight)})
+
+    partition = community.best_partition(graph)
+    parition_score = community.modularity(partition, graph)
+    print "# parition modularity:", parition_score
+    for node in partition:
+        name, user, domain = fromdiff.parse_address(node)
+        print "<"+user+"@"+domain+">", ",", partition[node]
+    return partition
+
+
+def drawCommunity(graph, partition, saveFile="", plotTables=True):
+    """ draw the induced community graph, without isolated nodes and with
+    several positioning types """
+
+    # remove isolated nodes
+    drawGraph = community.induced_graph(partition, graph)
+    if saveFile:
+        nx.write_graphml(drawGraph, saveFile)
+    for node in drawGraph.nodes()[:]:
+        if not drawGraph.neighbors(node):
+            drawGraph.remove_node(node)
+
+    # build a map community -> [node list]
     comMembers = defaultdict(list)
-
-    maxSize = 0
-    nodeLabels = {}
-    for com in communities :
+    max_community_size = 0
+    for com in set(partition.values()):
         list_nodes = [nodes for nodes in partition.keys()
-                                    if partition[nodes] == com]
+                      if partition[nodes] == com]
         comMembers[com] = list_nodes
-        drawGraph.add_node(com, size=len(list_nodes))
-        nodeLabels[com] = len(list_nodes)
-        if len(list_nodes) > maxSize:
-            maxSize = len(list_nodes)
-    maxLinks = 0
-    for c,l in [(c,l) for (c,l) in sorted(comMembers.items(), key=lambda x: len(x[1]))]:
-        print 
-        cRank = 0
-        for n in l:
-            cRank += infoRank[n]
-        print "XXXXXXXXXX", cRank, "XXXXXXXXXX"
-        for u in [user for user in sorted(l, key=lambda x: infoRank[x])]:
-            print u
+        if len(list_nodes) > max_community_size:
+            max_community_size = len(list_nodes)
 
-    for n in unMbGraph.nodes():
-        c1 = partition[n]
-        for neigh in unMbGraph[n]:
-            c2 = partition[neigh]
-            if c2 in drawGraph[c1]:
-                drawGraph[c1][c2]["weight"] += 1
-                if drawGraph[c1][c2]["weight"] > maxLinks:
-                    maxLinks = drawGraph[c1][c2]["weight"]
-            else:
-                drawGraph.add_edge(c1,c2,weight=1) 
-    plt.clf()
+    # define arrays of colors, labels and node size
     nodelist = drawGraph.nodes()
-    nodesize = [150+300*drawGraph.node[s]["size"]/maxSize for s in nodelist]
-    linkColor = [float(l[2]["weight"])/len(unMbGraph.edges()) for l in \
-            drawGraph.edges(data=True)]
-    nx.draw(drawGraph, node_list=nodelist, node_size=nodesize, 
-        labels=nodeLabels, edge_list=drawGraph.edges(), 
-        edge_color=linkColor, edge_cmap=plt.cm.Blues)
+    nodesize = []
+    nodelabels = {}
+    for node in drawGraph.nodes():
+        nodesize.append(300+1000*len(comMembers[node])/max_community_size)
+        nodelabels[node] = len(comMembers[node])
+    sortedComNames = {}
+    for idx, com in enumerate(sorted(filter(lambda x:len(x[1])>1, comMembers.items()),
+        key=lambda x: len(x[1]))):
+        sortedComNames[idx] = com[0]
+
+    link_color = []
+    edge_weight_max = max([x[2]["weight"] for x in drawGraph.edges(data=True)])
+    for link in drawGraph.edges(data=True):
+        link_color.append(float(link[2]["weight"])/edge_weight_max)
+    if plotTables:
+        print "Community & Size \\\\"
+        for node, com in sortedComNames.items():
+            print node, " & ", len(comMembers[com]), "\\\\"
+        print
+        print
+        print " & ", " & ".join(str(node) for node in sortedComNames), "\\\\"
+        for node, com in sortedComNames.items():
+            print node,
+            for neigh in sortedComNames.values():
+                edge = drawGraph[com][neigh]
+                print " & ", edge["weight"],
+            print "\\\\"
+
+
+
+    pos = nx.circular_layout(drawGraph)
+    nx.draw(drawGraph, pos=pos, node_list=nodelist, node_size=nodesize,
+            labels=nodelabels, edge_list=drawGraph.edges(),
+            edge_color=link_color, with_labels=True,
+            edge_cmap=plt.cm.Blues, width=5, font_size=15)
     plt.show()
 
-def saveJSON(mbox):
-    """ This function produces a json file with a list of the From: emails
-    formatted according to the input needed by the diffFrom script I use
-    to aggregate the emails"""
-    fromList = []
-    for message in mbox:
-        #FIXME ascii is the only way to have tk drow the graph, not utf-8
-        # but this can interfere with names clustering
-        fromField = unicode(message["From"], 
-                'ISO-8859-2').encode('ascii', 'ignore')
-        [name, user, domain] = parseAddress(fromField)
-        fromList.append('"'+name+'"'+" <"+user+'@'+domain+'>')
-    outFile = "/tmp/fromlist.json"
-    f = open(outFile, "w")
-    simplejson.dump(fromList, f)
-    f.close()
-     
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print 'Usage: /mbparse.pypython mbox'
+    if len(sys.argv) != 3:
+        print 'Usage: /mbparse.py mbox names_dictionary'
         sys.exit(1)
 
     mboxFile = sys.argv[1]
+    names_dictionary = sys.argv[2]
     mbox = mailbox.mbox(mboxFile)
-    #parseMboxFragment(mbox)
-    saveJSON(mbox)
+    g = parseMboxFragment(mbox, names_dictionary)
+    getMLRelevance(g)
+    commmunities = getCommunities(g)
+    drawCommunity(g, commmunities, saveFile="/tmp/community_graph.graphml")
+    #saveJSON(mbox)
     mbox.close()
 
 
