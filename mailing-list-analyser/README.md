@@ -1,8 +1,5 @@
 # A mailing list parser
----
-This code is useful to recreate the results published in the paper *On the Technical and Social Structure of Community Networks*, In The First IFIP Internet of People Workshop, IoP, 2016 [IEEE link here](http://ieeexplore.ieee.org/document/7497253/) and [pdf here](https://ans.disi.unitn.it/users/maccari/assets/files/bibliography/IoP2016.pdf).
 
----
 
 This python module will take in input the a mailbox in mbox format, it will parse all the messages and will create a social graph with all the participants to the community as nodes and edges between nodes that exchange at least one reply to the other. It will also compute
 the centrality of each node and its individual relevance, plus, the communities using the Louvain method. It will output the results in text and in images if needed.
