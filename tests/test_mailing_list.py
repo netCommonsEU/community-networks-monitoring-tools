@@ -2,7 +2,7 @@
 import mailbox
 import sys
 import os
-sys.path.insert(0, os.path.abspath('..'))
+sys.path.insert(0, os.path.abspath("../mailing-list-analyser/"))
 import mbparse
 
 if __name__ == "__main__":

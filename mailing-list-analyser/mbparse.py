@@ -1,10 +1,25 @@
+# Copyright (C) 2016  Leonardo Maccari maccari@disi.unitn.it
+# Author: Leonardo Maccari maccari@disi.unitn.it
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 import email
 import networkx as nx
 import matplotlib.pyplot as plt
 from collections import defaultdict
 import community
 import simplejson
-from fromdiff import fromdiff
 import time
 
 
@@ -120,18 +135,16 @@ def get_ML_relevance(graph):
     """ Compute the relevance of each person in the mailing list as the
     normalized sum of received answers """
 
-    received_anwers = defaultdict(int)
+    received_answers = defaultdict(int)
     tot_w = 0
     for node in graph.nodes(data=True):
-        parsed_fields = fromdiff.parse_address(node[0])
-        from_f = parsed_fields[1] + "@" + parsed_fields[2]
         for e in graph.in_edges(node[0], data=True):
-            received_anwers[from_f] += e[2]['weight']
+            received_answers[node[0]] += e[2]['weight']
             tot_w += e[2]['weight']
     print
     print "=============== ML Relevance ========================"
     print "# person".ljust(30), ",", "relevance".ljust(10)
-    s_l = sorted(received_anwers.items(), key=lambda x: -x[1])
+    s_l = sorted(received_answers.items(), key=lambda x: -x[1])
     for p, w in s_l:
         print p.ljust(30), ",", str(float(w)/tot_w).ljust(10)
     print ""
@@ -170,8 +183,7 @@ def get_communities(di_graph):
     print "=============== Community Partitions ========================"
     print "# parition modularity:", parition_score
     for node in partition:
-        name, user, domain = fromdiff.parse_address(node)
-        print "<"+user+"@"+domain+">", ",", partition[node]
+        print node, ",", partition[node]
     return partition
 
 
