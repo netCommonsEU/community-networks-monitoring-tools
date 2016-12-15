@@ -1,3 +1,6 @@
 [submodule "fromdiff"]
 	path = fromdiff
 	url = https://github.com/leonardomaccari/fromdiff.git
+[submodule "fairgraph"]
+	path = fairgraph
+	url = https://github.com/leonardomaccari/fairgraph.git
