@@ -117,6 +117,9 @@ def parse_mbox_fragment(mbox, names_dictionary):
 
 
 def get_ML_relevance(graph):
+    """ Compute the relevance of each person in the mailing list as the
+    normalized sum of received answers """
+
     received_anwers = defaultdict(int)
     tot_w = 0
     for node in graph.nodes(data=True):
@@ -142,6 +145,9 @@ def get_ML_relevance(graph):
 
 
 def get_communities(di_graph):
+
+    """ compute the communities in the social network, using the Louvain method
+    """
 
     # community detection works on undirected graphs, so we pick for each
     # neighbor couple the link with the highest weight. A person A that
@@ -236,5 +242,3 @@ def draw_community(graph, partition, save_file="", plot_tables=True):
             edge_color=link_color, with_labels=True,
             edge_cmap=plt.cm.Blues, width=5, font_size=15)
     plt.show()
-
-
