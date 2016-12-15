@@ -100,18 +100,21 @@ def parse_mbox_fragment(mbox, names_dictionary):
         # all the information sent by node n / total information sent
         info_rank[n] = float(out_degree_dict[n])/arrived_info
     c = nx.betweenness_centrality(nx.Graph(mb_graph))
-    print "# node".ljust(30), ",", "centrality".ljust(10)
-    for p in sorted(c.items(), key=lambda x: -x[1]):
-        print p[0]
-        parsed_fields = fromdiff.parse_address(p[0])
-        from_f = parsed_fields[1] + "@" + parsed_fields[2]
-        print from_f.ljust(30), ",", str(p[1]).ljust(10)
+
+    print "=============== Summary ========================"
     print "# tot num messages", len(message_dict)
     print "# tot num replies", arrived_info
     print "# first email:", earliest_message_date_s
     print "# last email:", latest_message_date_s
     print "# num senders:", len(mb_graph)
     print "# num senders without answer:", lone_nodes
+    print "======================================="
+    print
+    print "=============== Centrality ========================"
+
+    print "# node".ljust(30), ",", "centrality".ljust(10)
+    for p in sorted(c.items(), key=lambda x: -x[1]):
+        print p[0].ljust(30), ",", str(p[1]).ljust(10)
 
     return mb_graph
 
@@ -125,6 +128,8 @@ def get_ML_relevance(graph):
         for e in graph.in_edges(node[0], data=True):
             received_anwers[from_f] += e[2]['weight']
             tot_w += e[2]['weight']
+    print
+    print "=============== ML Relevance ========================"
     print "# person".ljust(30), ",", "relevance".ljust(10)
     s_l = sorted(received_anwers.items(), key=lambda x: -x[1])
     for p, w in s_l:
@@ -159,6 +164,7 @@ def get_communities(di_graph):
 
     partition = community.best_partition(graph)
     parition_score = community.modularity(partition, graph)
+    print "=============== Community Partitions ========================"
     print "# parition modularity:", parition_score
     for node in partition:
         name, user, domain = fromdiff.parse_address(node)
@@ -178,15 +184,16 @@ def draw_community(graph, partition, save_file="", plot_tables=True):
         if not draw_graph.neighbors(node):
             draw_graph.remove_node(node)
 
-    # build a map community -> [node list]
+    # build a map: community -> [node list]
     com_members = defaultdict(list)
     max_community_size = 0
     for com in set(partition.values()):
         list_nodes = [nodes for nodes in partition.keys()
                       if partition[nodes] == com]
-        com_members[com] = list_nodes
-        if len(list_nodes) > max_community_size:
-            max_community_size = len(list_nodes)
+        if len(list_nodes) > 1:
+            com_members[com] = list_nodes
+            if len(list_nodes) > max_community_size:
+                max_community_size = len(list_nodes)
 
     # define arrays of colors, labels and node size
     nodelist = draw_graph.nodes()
@@ -196,8 +203,7 @@ def draw_community(graph, partition, save_file="", plot_tables=True):
         nodesize.append(300+1000*len(com_members[node])/max_community_size)
         nodelabels[node] = len(com_members[node])
     sorted_com_names = {}
-    for idx, com in enumerate(sorted(filter(lambda x: len(x[1]) > 1,
-                                            com_members.items()),
+    for idx, com in enumerate(sorted(com_members.items(),
                                      key=lambda x: len(x[1]))):
         sorted_com_names[idx] = com[0]
 
@@ -206,18 +212,25 @@ def draw_community(graph, partition, save_file="", plot_tables=True):
                           for x in draw_graph.edges(data=True)])
     for link in draw_graph.edges(data=True):
         link_color.append(float(link[2]["weight"])/edge_weight_max)
-    if plot_tables:
+    print
+    print "=============== Tables ========================"
+    if plot_tables:  # just plot a LaTeX table
         print "Community & Size \\\\"
         for node, com in sorted_com_names.items():
             print node, " & ", len(com_members[com]), "\\\\"
         print
         print
+        print "% community interactions"
         print " & ", " & ".join(str(node) for node in sorted_com_names), "\\\\"
         for node, com in sorted_com_names.items():
             print node,
             for neigh in sorted_com_names.values():
-                edge = draw_graph[com][neigh]
-                print " & ", edge["weight"],
+                try:
+                    edge = draw_graph[com][neigh]
+                    e = edge["weight"]
+                except KeyError:
+                    e = 0
+                print " & ", e,
             print "\\\\"
 
     pos = nx.circular_layout(draw_graph)
