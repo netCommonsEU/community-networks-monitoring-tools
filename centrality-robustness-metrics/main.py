@@ -9,7 +9,7 @@ data = ogm.dataObject()
 if __name__ == '__main__':
 
     try:
-        opts, args = getopt.getopt(sys.argv[1:], "f:n:")
+        opts, args = getopt.getopt(sys.argv[1:], "f:n:d:")
     except getopt.GetoptError, err:
         # print help information and exit:
         print >> sys.stderr,  str(err)
@@ -25,7 +25,10 @@ if __name__ == '__main__':
         if option == "-n":
             data.initialize_names_dictionary(v)
             #ogm.alias_graph_owners(data)
-            ogm.dump_graphs(data)
+            data.dump_graphs(data)
+            continue
+        if option == "-d":
+            data.dump_db(v, data)
             continue
 
 #    try:
