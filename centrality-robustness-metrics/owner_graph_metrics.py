@@ -49,7 +49,6 @@ class dataObject:
     """ This class is used to store and load pickle files """
     def __init__(self):
         self.scanTree = dd2()
-        self.rawData = dd2()
         self.dataSummary = dd3()
         self.dumpFile = ""
         self.routeData = dd5()
@@ -66,10 +65,21 @@ class dataObject:
             raise
         d = pk.load(f)
         self.scanTree = d.scanTree
-        self.rawData = d.rawData
         self.dataSummary = d.dataSummary
         self.routeData = d.routeData
+        import code 
+        code.interact(local=locals())
         f.close()
+
+    def initialize_from_files(self, file_list):
+        for file in file_list:
+            try:
+                g = nx.read_graphml(file)
+            except:
+                raise
+            self.scanTree[g.graph["network"]]["ETX"].append(
+                    [g.graph["scan_id"], g.graph["scan_time"]])
+            self.routeData[g.graph["network"]][g.graph["scan_id"]]["Graph"] = g
 
     def initialize_names_dictionary(self, file_name):
         try:
@@ -292,7 +302,6 @@ class dataObject:
                 counter += 1
     
                 etxV = [e[2]['weight'] for e in G.edges(data=True)]
-                data.rawData[net][scanId[0]] = etxV
                 data.routeData[net][scanId[0]]["Graph"] = G
                 weightedPaths = nx.shortest_path(G, weight="weight")
                 for s in G.nodes():

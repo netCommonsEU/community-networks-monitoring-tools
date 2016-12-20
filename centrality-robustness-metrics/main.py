@@ -3,19 +3,20 @@ import owner_graph_metrics as ogm
 from owner_graph_metrics import dataObject, dd1, dd2, dd3, dd4, dd5
 import sys
 import getopt
+import glob
 
 data = ogm.dataObject()
 
 if __name__ == '__main__':
 
     try:
-        opts, args = getopt.getopt(sys.argv[1:], "f:n:d:")
+        opts, args = getopt.getopt(sys.argv[1:], "f:n:d:p:")
     except getopt.GetoptError, err:
         # print help information and exit:
         print >> sys.stderr,  str(err)
         sys.exit(1)
     for option, v in opts:
-        if option == "-f":
+        if option == "-p":
             try:
                 data.initialize(v)
             except IOError:
@@ -30,6 +31,12 @@ if __name__ == '__main__':
         if option == "-d":
             data.dump_db(v, data)
             continue
+        if option == "-f":
+            file_list = glob.glob(v)
+            print file_list
+            data.initialize_from_files(file_list)
+            continue
+    data.dump_graphs(data)
 
 #    try:
 #        opts, args = getopt.getopt(sys.argv[1:], "d:f:r:s:pS:vn:k:e:")
