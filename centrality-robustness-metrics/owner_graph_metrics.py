@@ -269,7 +269,7 @@ class dataObject:
                 networkPenalty = 2
             else:
                 networkPenalty = 1
-            for scanId in data.scanTree[net]['ETX']:
+            for scanId in data.scanTree[net]['ETX'][:2]:
                 queryString = QUERY % scanId[0]
                 q = ls.query("sid", "did", "etxv").\
                         from_statement(queryString)
@@ -282,7 +282,8 @@ class dataObject:
                     G = max(nx.connected_component_subgraphs(dirtyG, copy=True),
                             key=len)
                     componentSize = len(G)
-                    G.graph = {"network":net, "scan_time":scanId[1]}
+                    G.graph = {"network": net, "scan_time": scanId[1],
+                               "scan_id": scanId[0]}
                 else:
                     G = nx.Graph()
                     componentSize = 0
