@@ -7,7 +7,7 @@ import mbparse
 
 if __name__ == "__main__":
     if len(sys.argv) == 1:
-        mbox_file = "../testdata/wireless-12-2016.txt"
+        mbox_file = "../testdata/wireless-12-2016-converted.txt"
         dictionary = "../testdata/aliases.xml"
     else:
         mbox_file = sys.argv[1]
