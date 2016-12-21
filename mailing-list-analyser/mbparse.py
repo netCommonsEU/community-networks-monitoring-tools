@@ -21,6 +21,7 @@ from collections import defaultdict
 import community
 import simplejson
 import time
+import re
 
 
 def parse_mbox_fragment(mbox, names_dictionary):
@@ -170,11 +171,12 @@ def get_communities(di_graph):
     for node in di_graph.nodes():
         graph.add_node(node)
         for neigh in di_graph.neighbors(node):
-            edge_weight = di_graph.edges(node, neigh)[0][2]["weight"]
-            try:
-                reverse_weight = di_graph.edges(neigh, node)[0][2]["weight"]
-            except IndexError:
+            edge_weight = di_graph.get_edge_data(node, neigh)["weight"]
+            reverse_weight_data = di_graph.get_edge_data(neigh, node)
+            if not reverse_weight_data:
                 reverse_weight = 0
+            else:
+                reverse_weight = reverse_weight_data["weight"]
             graph.add_edge(node, neigh,
                            {"weight": max(edge_weight, reverse_weight)})
 
@@ -183,7 +185,12 @@ def get_communities(di_graph):
     print "=============== Community Partitions ========================"
     print "# parition modularity:", parition_score
     for node in partition:
-        print node, ",", partition[node]
+        node_email = re.search(r'[\w\.-]+@[\w\.-]+',
+                               node)
+        if node_email:
+            print node_email.group(0), ",", partition[node]
+        else:
+            print node, ",", partition[node]
     return partition
 
 
@@ -216,11 +223,13 @@ def draw_community(graph, partition, save_file="", plot_tables=True):
     nodelabels = {}
     for node in draw_graph.nodes():
         nodesize.append(300+1000*len(com_members[node])/max_community_size)
-        nodelabels[node] = len(com_members[node])
     sorted_com_names = {}
     for idx, com in enumerate(sorted(com_members.items(),
                                      key=lambda x: len(x[1]))):
         sorted_com_names[idx] = com[0]
+
+    for newlabel, oldlabel in sorted_com_names.items():
+        nodelabels[oldlabel] = newlabel
 
     link_color = []
     edge_weight_max = max([x[2]["weight"]

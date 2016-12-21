@@ -1,0 +1,897 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="weight" attr.type="double" for="edge" id="d4" />
+  <key attr.name="email" attr.type="string" for="node" id="d3" />
+  <key attr.name="network" attr.type="string" for="graph" id="d2" />
+  <key attr.name="scan_id" attr.type="int" for="graph" id="d1" />
+  <key attr.name="scan_time" attr.type="string" for="graph" id="d0" />
+  <graph edgedefault="undirected">
+    <data key="d0">2012-11-30 23:50:00.000000</data>
+    <data key="d1">69</data>
+    <data key="d2">FFGraz</data>
+    <node id="0e80ff9be64ecac882e769f49819da78973d19037f4bff5f28c2fff9a2f1d381">
+      <data key="d3" />
+    </node>
+    <node id="7f810570ab36d62af5b631a9e8154410f6063a2e2b7f5a5ee175bc27baaba694">
+      <data key="d3" />
+    </node>
+    <node id="32a521fb44de3de735c019d6520da2a9d66d4b04c77c3277749c9f249f9c7b0e">
+      <data key="d3" />
+    </node>
+    <node id="9588caee411b44c114ce7a871369e6a0db5a72fd53075098fbcb29cdfa80bdde">
+      <data key="d3" />
+    </node>
+    <node id="2ae8408accabf8aaa687c3241d99e3d14110ccfd462f0ac6f07e983be53e568d">
+      <data key="d3" />
+    </node>
+    <node id="9ee03c4c288f0302b8e310c862dcf48e1bad3322bcd6deb4f1ff1b277714fb5a">
+      <data key="d3" />
+    </node>
+    <node id="a8bfaf92b4c37f9f11a9d0e25ba8e43d3bff23a6098b8807c2a6d007c4723380">
+      <data key="d3" />
+    </node>
+    <node id="d7689e1e27261039fb38c4b3324becaf091e6d094cd4fb212dc18c7771e0c735">
+      <data key="d3" />
+    </node>
+    <node id="1579eb876ce7dd96bdf4ed849dce0387454257c72a7bf1d9a724165b300d2d5d">
+      <data key="d3" />
+    </node>
+    <node id="a524049b1ce1e3a541eab1a85efaec6b5a5817523a26026b05f9907649eb1762">
+      <data key="d3" />
+    </node>
+    <node id="ab11caa550f43bf2d298270b65c2262bc90dfd902eb921f2fd0d5af95a21370a">
+      <data key="d3" />
+    </node>
+    <node id="08cccc7db482ab9df14dfa47fecac34487fc604a59d36fc06f6273cd6e4a46d7">
+      <data key="d3" />
+    </node>
+    <node id="5b7e0fff44a994c46be8cf456459d0d7d948946869ebca1daa3e5b14f01a4ef9">
+      <data key="d3" />
+    </node>
+    <node id="8d23961663878327c0bf1c2b3ab8548a346657b8191ba50e8b1f20ae728cf52d">
+      <data key="d3" />
+    </node>
+    <node id="749080743bf4bc19db22b96456436dae07699e1d15a2f54df995a8b08d7707cc">
+      <data key="d3" />
+    </node>
+    <node id="06df15004ca958eaa4fcc290a71dd65bf9ea464a21fe0097961a632e5c026b3c">
+      <data key="d3" />
+    </node>
+    <node id="fef6456ae4c8619937047e71ba77a9bf4df1483710ec5590a0a641065e593a82">
+      <data key="d3" />
+    </node>
+    <node id="43d5aded41e232fb286292ce04c9d6f5ac693d0dc7adb91c733ef4fd71c80d80">
+      <data key="d3" />
+    </node>
+    <node id="1eccd5d7a183d78fa44a3332d83541356b602d7a589a717fadde8198b16b7302">
+      <data key="d3" />
+    </node>
+    <node id="3d5d15601058b127f2ce5e802531386dcefe2a96857520c6704f1eb29b1eac82">
+      <data key="d3" />
+    </node>
+    <node id="fde9b48426ce32f984b475e8b457e4df672b2b955dd4a358864c37e530236698">
+      <data key="d3" />
+    </node>
+    <node id="0ddf30827e6d4b6ba0688763445b2dcf2ae2d73f75b68871fafa432f99912d47">
+      <data key="d3" />
+    </node>
+    <node id="cec0cd52eda6c5db9a988f3309a3fe332edd4ce29b0c96acea147df09ad7fc21">
+      <data key="d3" />
+    </node>
+    <node id="53c27ed46cfc232686dede0dec7ca0ae81093c5da4e116d12b93cf71e119b2fc">
+      <data key="d3" />
+    </node>
+    <node id="5b502f34c453c21473d157c602d5a129213413e8f4a4a9529623e3407aff6a6d">
+      <data key="d3" />
+    </node>
+    <node id="b8a88c21b6f4586615a8b0bb41a4db8d545ce16edf3440e9de5e949c041e218e">
+      <data key="d3" />
+    </node>
+    <node id="4103fa819d52ccd988f8a2593080febb158345d8549ff7056c5c684a963d42ed">
+      <data key="d3" />
+    </node>
+    <node id="453b5035eada7a95b7f4d6d004f1740ff4ccabc35682519b6791cb4242d104f5">
+      <data key="d3" />
+    </node>
+    <node id="3104e7d7bffd44f2c3a793452b1ac35a42f6f409650f400b10e892a45fe85dd3">
+      <data key="d3" />
+    </node>
+    <node id="293b19f3ba9a4017bf890ef52d7a00e43156e3fe49f6231178a320f8662c4cc5">
+      <data key="d3" />
+    </node>
+    <node id="72c60d22898191701cc13f5b60a91fd44d639dceea93eb2cc0fb397a2c6cd3c0">
+      <data key="d3" />
+    </node>
+    <node id="63e53b8416f9c4fc3ffbebe83a851b694e4520809311b156a49141d80a64a8ed">
+      <data key="d3" />
+    </node>
+    <node id="080a0b43bce9fe0736e80aaab34fb16c23091cd04c9d729a01f87508ff3734f4">
+      <data key="d3" />
+    </node>
+    <node id="a46d2fcaea0f363be880300384be0270b89ea1d7078a89dfa7173b2d99252f20">
+      <data key="d3" />
+    </node>
+    <node id="f9362f5c7121dafd34e4473a4e9c9b034111d925a4e406814bb3f792ad87a35a">
+      <data key="d3" />
+    </node>
+    <node id="54149c4b14fef17b551c4e67fde076c89438d1c2c8fe4632be7ee7fd31700b6d">
+      <data key="d3" />
+    </node>
+    <node id="046c56738fa90ce3c43069d835316d150a0878d5de9a6346ad3b57f481fbb1fc">
+      <data key="d3" />
+    </node>
+    <node id="b141838f2b01ed89a1387a6ecf90840ddbe3ca9478bedbd8c30ecba5ea1db191">
+      <data key="d3" />
+    </node>
+    <node id="4f28ca411b00aa9285b19268674d2b321722e583d56edee7a44bfc1f468c4cf6">
+      <data key="d3" />
+    </node>
+    <node id="45c0921d7e51dd45196cff7d6c513b9aedc5901e22b0183ce17a9d6233d71145">
+      <data key="d3" />
+    </node>
+    <node id="0efc868db5dd1912bfca750140ace1392947a2bba5e17a142019299a328a4404">
+      <data key="d3" />
+    </node>
+    <node id="eca0aa9916e9d1556b48692d45e4f0a62b92dcfcf15de3857f883aaacd66d555">
+      <data key="d3" />
+    </node>
+    <node id="a44c506f4554734fd031baac1ddb2ff683211bc0c76d1bde5453f332fcde4add">
+      <data key="d3" />
+    </node>
+    <node id="5e2ea48248b3a5c323fe535525943721fd4cf44084a6b749b7c66871da215a7a">
+      <data key="d3" />
+    </node>
+    <node id="91ea1fa22d304c947d2d52ed8c2b942adddde874976a55fb8bc075a714f911b3">
+      <data key="d3" />
+    </node>
+    <node id="c202988e1efb2a08ad50f06845b2f6b08f3a0f196b35b8d397b382cc72922ecd">
+      <data key="d3" />
+    </node>
+    <node id="dc654e74c264bd0084762e2082e514b4bb01301200ed4fdf7d6fc7b52f623187">
+      <data key="d3" />
+    </node>
+    <node id="92d40d98ffcf06cf9e8c2771a99d2891b8c4f06b5f06ba59de7df45fc4b6909b">
+      <data key="d3" />
+    </node>
+    <node id="d4a2b44fabeb0efb50da9c0876671bc48dfe7bb7daf4c1ddb60f62649cb9c953">
+      <data key="d3" />
+    </node>
+    <node id="d4c2b3f0adcab3128059aa732ab16d2298552b0dd90957705aee67af9fbbc816">
+      <data key="d3" />
+    </node>
+    <node id="de6b0c9080f9e0699bd9d5d93e3fd2985268ead43e5255e6028517693f25d78c">
+      <data key="d3" />
+    </node>
+    <node id="1ba6736eb3c33a5842b09fe9f359be2fcedfed06d906c5c023f54d8e13214345">
+      <data key="d3" />
+    </node>
+    <node id="c0f0f17f85f4a7355a260312550e6e3a1bf8817155baacc2981e46cbc4331fa8">
+      <data key="d3" />
+    </node>
+    <node id="ed3a6d650812403345349ceb3e9c6bd77678b226bdf51aebbda3d51c3511734d">
+      <data key="d3" />
+    </node>
+    <node id="b83789f61811a2734493bf6c1bdf1a7afcad7f96804b86e890da7606a3d782ae">
+      <data key="d3" />
+    </node>
+    <node id="0ee07cde56cdfcaede62cbdb06ea6047ac0bc2debd5a96180981b16e3987f28c">
+      <data key="d3" />
+    </node>
+    <node id="bc2d07c958cef73527eca71c98a3de1c070c0b1c79fb64d1f0bb677faf4f72c1">
+      <data key="d3" />
+    </node>
+    <node id="504fd6fe2929a2d92d292430b30a6c23b68256df080e12f0b8b7c66a053fbe89">
+      <data key="d3" />
+    </node>
+    <node id="a5189ea95a9c04903d662bffa293644c9065e0a4af69f47a5d57c67983f317b2">
+      <data key="d3" />
+    </node>
+    <node id="fe894a4485ec69bb32b80734f8317bcf4253ce4f998c4f89cdeeb9657bd62803">
+      <data key="d3" />
+    </node>
+    <node id="645fd9af7570a08ac3f854f9119dc2a823ab9d69bec838582d600468ab12f34d">
+      <data key="d3" />
+    </node>
+    <node id="9c92ff1d3527a11aa914e64be0907178eb274d4544f3e755369356831837b0a4">
+      <data key="d3" />
+    </node>
+    <node id="673f9fcc8b2ba725596ce4ddbd980d15c668af153bb945b7337689dbc1eb68bb">
+      <data key="d3" />
+    </node>
+    <node id="2ff99dc3f02ba2534d97dbb6293b70cf10aac9842beddd4d5074ed10e8080365">
+      <data key="d3" />
+    </node>
+    <node id="d7303581510f6e6ffd5f340d765afce14590d5ef6bd02bd4f43f2af3b88ee442">
+      <data key="d3" />
+    </node>
+    <node id="2b5b7a15907e154a005f3706a61ce059529c210dbee5f3b3dfaa533def117b76">
+      <data key="d3" />
+    </node>
+    <node id="1e109864b370912828bceabad9074188e63c422eaf47091f92bcd859c49649fb">
+      <data key="d3" />
+    </node>
+    <node id="d69f0fc7f8a29ed9d4adb1f09b20d30640f6139ac8d1cd361fb4b6f65cd6c248">
+      <data key="d3" />
+    </node>
+    <node id="f692b3d7571e424778b770dfe1d5664274b3c41a95ff5a7676b53188dd9fca76">
+      <data key="d3" />
+    </node>
+    <node id="c1b54f6fa3255ecc87713c365775fa22a4086048104a39d646c5fb95cd0ef61b">
+      <data key="d3" />
+    </node>
+    <node id="d7bf6847e0d1359e1f373499a3fb8533b68262bf905dcebf6bd117ac8cde8b22">
+      <data key="d3" />
+    </node>
+    <node id="a554b35833e83631b2b84b9c9d78b886db2eb1f0f341de4fcfb6cdc67835d970">
+      <data key="d3" />
+    </node>
+    <node id="8aa388eaf87e7ad440fd1d2f15704135888be12a1247e34b85ed7d6af2f2d4fa">
+      <data key="d3" />
+    </node>
+    <node id="c9afdf4fcf0d3d3253bd958a81fce1e4ad16aa95243fa14ac031a1156dd1c3b3">
+      <data key="d3" />
+    </node>
+    <node id="cae880f252659c404e7513addc9a2cbb9a3067fbc3e67c4bc958cbf976d8e3fb">
+      <data key="d3" />
+    </node>
+    <node id="cd2770e9f7924684082f9a2926a2417649eb79271cf05e38e1fd1a5596877310">
+      <data key="d3" />
+    </node>
+    <node id="e66db58b0ac09728d1ca2afd78983aae53598dad4b9f27e2af00e54b172db472">
+      <data key="d3" />
+    </node>
+    <node id="b3d8d485fb7bad8aacb929da6f2ab2ab063ae9c9a35d6d3334777db13b0b8ace">
+      <data key="d3" />
+    </node>
+    <node id="8c7c2eac24072f6b7c6cfb544aa1b9601094857689a7006ad5dcf7ea72edf85b">
+      <data key="d3" />
+    </node>
+    <node id="5a20cefc42db6d80de916283242e6cba464b3d6af1ae707546d3cca3305a7b2e">
+      <data key="d3" />
+    </node>
+    <node id="fe170cd0b0b4be20ba657e9366da3458ab6451a9115f5adbe74782dc595a4a40">
+      <data key="d3" />
+    </node>
+    <node id="93974c53e624ce220640cdc3437f105b41c1194d72c831b0e76fa90ed7d2e57f">
+      <data key="d3" />
+    </node>
+    <node id="5c14781b25b756745a07255c9ae1569efc0dee2f0dd7b39a5a4092afc59c46b1">
+      <data key="d3" />
+    </node>
+    <node id="fd4808a344433e96ead5c8080ac32e3ffb70c7025f7b27af50ab30b12e2f0ae9">
+      <data key="d3" />
+    </node>
+    <node id="b99d21dfad51622dd03bd3bc90c3935a9aa29d16f56b89696212505335d30f21">
+      <data key="d3" />
+    </node>
+    <node id="5a1bfe3f272afa49630c9add572bd12d4fdcfe3852efb663f7fea9ba47856c72">
+      <data key="d3" />
+    </node>
+    <node id="bc0992adeb886ac2e31c70a811aa4acc0d6d827f1b749a7633d6b0fbcb0824c6">
+      <data key="d3" />
+    </node>
+    <node id="3468e5d106450f33f6013cf9d8a193fcc80543acffed2386dc61160967899cdf">
+      <data key="d3" />
+    </node>
+    <node id="8186106d590bf5a186dd332233fb07cbcc082bc3503c90104a90601ed89e1a79">
+      <data key="d3" />
+    </node>
+    <node id="82cee7b8114fd4d89f503624dee75b1c11f5d868c6b4e039b6e0b1520fd6af5b">
+      <data key="d3" />
+    </node>
+    <node id="198201cbea062e51a46c0a63e726bc2f4bea99e1112f5a6f5386a4bf0613b532">
+      <data key="d3" />
+    </node>
+    <node id="11382dc16d2110328e835374e71e56e052d7c376178ea966bc25fad2c1cb0564">
+      <data key="d3" />
+    </node>
+    <node id="a7d5e322d48c94c8e2ee9ea5abbfc98f05e8bd90be2215f72ffb9e774aab5e35">
+      <data key="d3" />
+    </node>
+    <node id="6ef51430dff451a4bd5d24309282150820b086c0efed17a782ca77c7c894f25d">
+      <data key="d3" />
+    </node>
+    <node id="9b4f8121bd3cbc1af5730d3a781936ac7452bfd78397ebd4f5df4a5637823806">
+      <data key="d3" />
+    </node>
+    <node id="35fd6bfcefd99161f5aaa14f396b7393691060c5e19cba5c6c3cd60a7add506b">
+      <data key="d3" />
+    </node>
+    <node id="fc9fca775a7c1f756d26db018c945c11927eee028e38c7ad02a388f91d817f80">
+      <data key="d3" />
+    </node>
+    <node id="12c24457e6c70a8c6d9866218dcf8baf3dd1f034b19ae17fa3c051163033f3a0">
+      <data key="d3" />
+    </node>
+    <node id="104fcc2695640482fb21059a2962e4016dffcb017649189a8676423ac4d2abab">
+      <data key="d3" />
+    </node>
+    <node id="8bc820e84bf53271f6038b200438c488666089e60d830c588c594560d602bdb7">
+      <data key="d3" />
+    </node>
+    <node id="95a4ae7a6390b258a4db7e7026bdac62e409609a5b7d1135df4f168ff3c95f20">
+      <data key="d3" />
+    </node>
+    <node id="5a9fbc675a77890d44aec5288d4035bc363e4cf1c606c9bef009158eba3626a7">
+      <data key="d3" />
+    </node>
+    <node id="e8bea890bf2754bc4ddcc353a3b651d3e7fd405fac80be90b28465c31c3ece1a">
+      <data key="d3" />
+    </node>
+    <node id="7c9987606c96254611af4fcc912caeeeedd3b96b420245e9c86c18c6c7f05bf1">
+      <data key="d3" />
+    </node>
+    <node id="d8e46f20904e318cc5688aadb4d2cedeeaaab6099835c7805eeb153158ad805f">
+      <data key="d3" />
+    </node>
+    <node id="bd4baf5c458e6a613483e8eee6ebca47ce4266d84adc5d5e98ddc3d1e877999f">
+      <data key="d3" />
+    </node>
+    <node id="d723086130ef1c9c78cea2adc0bcb746b8d3b51310196a4b34d95827df073d97">
+      <data key="d3" />
+    </node>
+    <node id="98bf3ff56ad2dc9fcbf32a67f2e170c58f3a2987d9c847ecdb7a9992b02da570">
+      <data key="d3" />
+    </node>
+    <node id="08885708afa9db973f15de75dea90401b55292e5f0b2cef5bd54a2539bd1d3e6">
+      <data key="d3" />
+    </node>
+    <node id="1551e9ab3503cdecb93c003a348d2d12709702cae425242c632e0084ce6c8b26">
+      <data key="d3" />
+    </node>
+    <node id="3c445fa994b9ea626870033f13808ae47c8aabb490cfa4cc7acc543ac94af214">
+      <data key="d3" />
+    </node>
+    <node id="3e885910b8ac7e1c74f17e49405403e2869338a59e7fa74ff96954b45d3305ee">
+      <data key="d3" />
+    </node>
+    <node id="2f8835f1081e03f44885c9ff9b18d2bf2d3c44e877bf5b5aca9cc5648e37d9de">
+      <data key="d3" />
+    </node>
+    <node id="3b0a1029a25de6fe5f86b5e08401cf3977ae8d6db9f726176615a532fd6986f2">
+      <data key="d3" />
+    </node>
+    <node id="0dce3a55e52c7f7fa9343afa15c1c172f8f11febb21667ce97d41d68b52397fb">
+      <data key="d3" />
+    </node>
+    <node id="65026daeca14e6150097e70f33b1d6d25f7e454d776567919d788c631a298372">
+      <data key="d3" />
+    </node>
+    <node id="783b3acb56a6d68a19f9d525d3a6239b646d9ea8078e875509debbb7ef6983ae">
+      <data key="d3" />
+    </node>
+    <node id="561f07cb8907e59096f6061731a8d0891f67fac785dcb694ba6161e970fb3c0d">
+      <data key="d3" />
+    </node>
+    <node id="8fd9edccfb43afacb1c40dc28581cb623bc91950667f0c0ab9b06938e6d9dc93">
+      <data key="d3" />
+    </node>
+    <node id="6f7f2d1e7bf1cad4328779bb9f04fbf293e506ab39c30a8db0f006cb64ddc9b7">
+      <data key="d3" />
+    </node>
+    <node id="9e332bab35be884b727cb30d0fd404d3a8f054d6b180ec7f5e0b4894fa366b24">
+      <data key="d3" />
+    </node>
+    <edge source="0e80ff9be64ecac882e769f49819da78973d19037f4bff5f28c2fff9a2f1d381" target="a7d5e322d48c94c8e2ee9ea5abbfc98f05e8bd90be2215f72ffb9e774aab5e35">
+      <data key="d4">1.613</data>
+    </edge>
+    <edge source="7f810570ab36d62af5b631a9e8154410f6063a2e2b7f5a5ee175bc27baaba694" target="8c7c2eac24072f6b7c6cfb544aa1b9601094857689a7006ad5dcf7ea72edf85b">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="7f810570ab36d62af5b631a9e8154410f6063a2e2b7f5a5ee175bc27baaba694" target="0ee07cde56cdfcaede62cbdb06ea6047ac0bc2debd5a96180981b16e3987f28c">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="7f810570ab36d62af5b631a9e8154410f6063a2e2b7f5a5ee175bc27baaba694" target="2ff99dc3f02ba2534d97dbb6293b70cf10aac9842beddd4d5074ed10e8080365">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="32a521fb44de3de735c019d6520da2a9d66d4b04c77c3277749c9f249f9c7b0e" target="a554b35833e83631b2b84b9c9d78b886db2eb1f0f341de4fcfb6cdc67835d970">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="9588caee411b44c114ce7a871369e6a0db5a72fd53075098fbcb29cdfa80bdde" target="9c92ff1d3527a11aa914e64be0907178eb274d4544f3e755369356831837b0a4">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="9588caee411b44c114ce7a871369e6a0db5a72fd53075098fbcb29cdfa80bdde" target="11382dc16d2110328e835374e71e56e052d7c376178ea966bc25fad2c1cb0564">
+      <data key="d4">1.91</data>
+    </edge>
+    <edge source="2ae8408accabf8aaa687c3241d99e3d14110ccfd462f0ac6f07e983be53e568d" target="9c92ff1d3527a11aa914e64be0907178eb274d4544f3e755369356831837b0a4">
+      <data key="d4">9.646</data>
+    </edge>
+    <edge source="2ae8408accabf8aaa687c3241d99e3d14110ccfd462f0ac6f07e983be53e568d" target="5c14781b25b756745a07255c9ae1569efc0dee2f0dd7b39a5a4092afc59c46b1">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="2ae8408accabf8aaa687c3241d99e3d14110ccfd462f0ac6f07e983be53e568d" target="fc9fca775a7c1f756d26db018c945c11927eee028e38c7ad02a388f91d817f80">
+      <data key="d4">1.008</data>
+    </edge>
+    <edge source="2ae8408accabf8aaa687c3241d99e3d14110ccfd462f0ac6f07e983be53e568d" target="f9362f5c7121dafd34e4473a4e9c9b034111d925a4e406814bb3f792ad87a35a">
+      <data key="d4">2.529</data>
+    </edge>
+    <edge source="2ae8408accabf8aaa687c3241d99e3d14110ccfd462f0ac6f07e983be53e568d" target="8aa388eaf87e7ad440fd1d2f15704135888be12a1247e34b85ed7d6af2f2d4fa">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="2ae8408accabf8aaa687c3241d99e3d14110ccfd462f0ac6f07e983be53e568d" target="a44c506f4554734fd031baac1ddb2ff683211bc0c76d1bde5453f332fcde4add">
+      <data key="d4">1.575</data>
+    </edge>
+    <edge source="2ae8408accabf8aaa687c3241d99e3d14110ccfd462f0ac6f07e983be53e568d" target="e66db58b0ac09728d1ca2afd78983aae53598dad4b9f27e2af00e54b172db472">
+      <data key="d4">1.143</data>
+    </edge>
+    <edge source="2ae8408accabf8aaa687c3241d99e3d14110ccfd462f0ac6f07e983be53e568d" target="6f7f2d1e7bf1cad4328779bb9f04fbf293e506ab39c30a8db0f006cb64ddc9b7">
+      <data key="d4">4.533</data>
+    </edge>
+    <edge source="2ae8408accabf8aaa687c3241d99e3d14110ccfd462f0ac6f07e983be53e568d" target="f692b3d7571e424778b770dfe1d5664274b3c41a95ff5a7676b53188dd9fca76">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="2ae8408accabf8aaa687c3241d99e3d14110ccfd462f0ac6f07e983be53e568d" target="3b0a1029a25de6fe5f86b5e08401cf3977ae8d6db9f726176615a532fd6986f2">
+      <data key="d4">1.008</data>
+    </edge>
+    <edge source="2ae8408accabf8aaa687c3241d99e3d14110ccfd462f0ac6f07e983be53e568d" target="749080743bf4bc19db22b96456436dae07699e1d15a2f54df995a8b08d7707cc">
+      <data key="d4">5.597</data>
+    </edge>
+    <edge source="9ee03c4c288f0302b8e310c862dcf48e1bad3322bcd6deb4f1ff1b277714fb5a" target="45c0921d7e51dd45196cff7d6c513b9aedc5901e22b0183ce17a9d6233d71145">
+      <data key="d4">1.256</data>
+    </edge>
+    <edge source="9ee03c4c288f0302b8e310c862dcf48e1bad3322bcd6deb4f1ff1b277714fb5a" target="a554b35833e83631b2b84b9c9d78b886db2eb1f0f341de4fcfb6cdc67835d970">
+      <data key="d4">1.316</data>
+    </edge>
+    <edge source="9ee03c4c288f0302b8e310c862dcf48e1bad3322bcd6deb4f1ff1b277714fb5a" target="ab11caa550f43bf2d298270b65c2262bc90dfd902eb921f2fd0d5af95a21370a">
+      <data key="d4">6.968</data>
+    </edge>
+    <edge source="a8bfaf92b4c37f9f11a9d0e25ba8e43d3bff23a6098b8807c2a6d007c4723380" target="9c92ff1d3527a11aa914e64be0907178eb274d4544f3e755369356831837b0a4">
+      <data key="d4">1.467</data>
+    </edge>
+    <edge source="d7689e1e27261039fb38c4b3324becaf091e6d094cd4fb212dc18c7771e0c735" target="5c14781b25b756745a07255c9ae1569efc0dee2f0dd7b39a5a4092afc59c46b1">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="1579eb876ce7dd96bdf4ed849dce0387454257c72a7bf1d9a724165b300d2d5d" target="3b0a1029a25de6fe5f86b5e08401cf3977ae8d6db9f726176615a532fd6986f2">
+      <data key="d4">1.539</data>
+    </edge>
+    <edge source="a524049b1ce1e3a541eab1a85efaec6b5a5817523a26026b05f9907649eb1762" target="4f28ca411b00aa9285b19268674d2b321722e583d56edee7a44bfc1f468c4cf6">
+      <data key="d4">1.11</data>
+    </edge>
+    <edge source="ab11caa550f43bf2d298270b65c2262bc90dfd902eb921f2fd0d5af95a21370a" target="45c0921d7e51dd45196cff7d6c513b9aedc5901e22b0183ce17a9d6233d71145">
+      <data key="d4">1.203</data>
+    </edge>
+    <edge source="ab11caa550f43bf2d298270b65c2262bc90dfd902eb921f2fd0d5af95a21370a" target="a554b35833e83631b2b84b9c9d78b886db2eb1f0f341de4fcfb6cdc67835d970">
+      <data key="d4">1.533</data>
+    </edge>
+    <edge source="ab11caa550f43bf2d298270b65c2262bc90dfd902eb921f2fd0d5af95a21370a" target="3468e5d106450f33f6013cf9d8a193fcc80543acffed2386dc61160967899cdf">
+      <data key="d4">1.184</data>
+    </edge>
+    <edge source="ab11caa550f43bf2d298270b65c2262bc90dfd902eb921f2fd0d5af95a21370a" target="d7bf6847e0d1359e1f373499a3fb8533b68262bf905dcebf6bd117ac8cde8b22">
+      <data key="d4">1.057</data>
+    </edge>
+    <edge source="ab11caa550f43bf2d298270b65c2262bc90dfd902eb921f2fd0d5af95a21370a" target="0ee07cde56cdfcaede62cbdb06ea6047ac0bc2debd5a96180981b16e3987f28c">
+      <data key="d4">1.173</data>
+    </edge>
+    <edge source="08cccc7db482ab9df14dfa47fecac34487fc604a59d36fc06f6273cd6e4a46d7" target="a554b35833e83631b2b84b9c9d78b886db2eb1f0f341de4fcfb6cdc67835d970">
+      <data key="d4">1.438</data>
+    </edge>
+    <edge source="08cccc7db482ab9df14dfa47fecac34487fc604a59d36fc06f6273cd6e4a46d7" target="3468e5d106450f33f6013cf9d8a193fcc80543acffed2386dc61160967899cdf">
+      <data key="d4">1.271</data>
+    </edge>
+    <edge source="5b7e0fff44a994c46be8cf456459d0d7d948946869ebca1daa3e5b14f01a4ef9" target="a7d5e322d48c94c8e2ee9ea5abbfc98f05e8bd90be2215f72ffb9e774aab5e35">
+      <data key="d4">1.02</data>
+    </edge>
+    <edge source="8d23961663878327c0bf1c2b3ab8548a346657b8191ba50e8b1f20ae728cf52d" target="9c92ff1d3527a11aa914e64be0907178eb274d4544f3e755369356831837b0a4">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="8d23961663878327c0bf1c2b3ab8548a346657b8191ba50e8b1f20ae728cf52d" target="293b19f3ba9a4017bf890ef52d7a00e43156e3fe49f6231178a320f8662c4cc5">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="8d23961663878327c0bf1c2b3ab8548a346657b8191ba50e8b1f20ae728cf52d" target="3b0a1029a25de6fe5f86b5e08401cf3977ae8d6db9f726176615a532fd6986f2">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="8d23961663878327c0bf1c2b3ab8548a346657b8191ba50e8b1f20ae728cf52d" target="8fd9edccfb43afacb1c40dc28581cb623bc91950667f0c0ab9b06938e6d9dc93">
+      <data key="d4">4.229</data>
+    </edge>
+    <edge source="8d23961663878327c0bf1c2b3ab8548a346657b8191ba50e8b1f20ae728cf52d" target="1e109864b370912828bceabad9074188e63c422eaf47091f92bcd859c49649fb">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="749080743bf4bc19db22b96456436dae07699e1d15a2f54df995a8b08d7707cc" target="9c92ff1d3527a11aa914e64be0907178eb274d4544f3e755369356831837b0a4">
+      <data key="d4">1.692</data>
+    </edge>
+    <edge source="749080743bf4bc19db22b96456436dae07699e1d15a2f54df995a8b08d7707cc" target="de6b0c9080f9e0699bd9d5d93e3fd2985268ead43e5255e6028517693f25d78c">
+      <data key="d4">1.391</data>
+    </edge>
+    <edge source="749080743bf4bc19db22b96456436dae07699e1d15a2f54df995a8b08d7707cc" target="f692b3d7571e424778b770dfe1d5664274b3c41a95ff5a7676b53188dd9fca76">
+      <data key="d4">2.194</data>
+    </edge>
+    <edge source="749080743bf4bc19db22b96456436dae07699e1d15a2f54df995a8b08d7707cc" target="d4a2b44fabeb0efb50da9c0876671bc48dfe7bb7daf4c1ddb60f62649cb9c953">
+      <data key="d4">4.339</data>
+    </edge>
+    <edge source="749080743bf4bc19db22b96456436dae07699e1d15a2f54df995a8b08d7707cc" target="3b0a1029a25de6fe5f86b5e08401cf3977ae8d6db9f726176615a532fd6986f2">
+      <data key="d4">4.517</data>
+    </edge>
+    <edge source="06df15004ca958eaa4fcc290a71dd65bf9ea464a21fe0097961a632e5c026b3c" target="5a9fbc675a77890d44aec5288d4035bc363e4cf1c606c9bef009158eba3626a7">
+      <data key="d4">2.382</data>
+    </edge>
+    <edge source="06df15004ca958eaa4fcc290a71dd65bf9ea464a21fe0097961a632e5c026b3c" target="92d40d98ffcf06cf9e8c2771a99d2891b8c4f06b5f06ba59de7df45fc4b6909b">
+      <data key="d4">1.904</data>
+    </edge>
+    <edge source="fef6456ae4c8619937047e71ba77a9bf4df1483710ec5590a0a641065e593a82" target="e66db58b0ac09728d1ca2afd78983aae53598dad4b9f27e2af00e54b172db472">
+      <data key="d4">2.353</data>
+    </edge>
+    <edge source="fef6456ae4c8619937047e71ba77a9bf4df1483710ec5590a0a641065e593a82" target="cec0cd52eda6c5db9a988f3309a3fe332edd4ce29b0c96acea147df09ad7fc21">
+      <data key="d4">1.453</data>
+    </edge>
+    <edge source="43d5aded41e232fb286292ce04c9d6f5ac693d0dc7adb91c733ef4fd71c80d80" target="9e332bab35be884b727cb30d0fd404d3a8f054d6b180ec7f5e0b4894fa366b24">
+      <data key="d4">1.987</data>
+    </edge>
+    <edge source="1eccd5d7a183d78fa44a3332d83541356b602d7a589a717fadde8198b16b7302" target="2ff99dc3f02ba2534d97dbb6293b70cf10aac9842beddd4d5074ed10e8080365">
+      <data key="d4">5.1</data>
+    </edge>
+    <edge source="3d5d15601058b127f2ce5e802531386dcefe2a96857520c6704f1eb29b1eac82" target="9b4f8121bd3cbc1af5730d3a781936ac7452bfd78397ebd4f5df4a5637823806">
+      <data key="d4">3.396</data>
+    </edge>
+    <edge source="3d5d15601058b127f2ce5e802531386dcefe2a96857520c6704f1eb29b1eac82" target="4103fa819d52ccd988f8a2593080febb158345d8549ff7056c5c684a963d42ed">
+      <data key="d4">1.774</data>
+    </edge>
+    <edge source="3d5d15601058b127f2ce5e802531386dcefe2a96857520c6704f1eb29b1eac82" target="673f9fcc8b2ba725596ce4ddbd980d15c668af153bb945b7337689dbc1eb68bb">
+      <data key="d4">4.497</data>
+    </edge>
+    <edge source="3d5d15601058b127f2ce5e802531386dcefe2a96857520c6704f1eb29b1eac82" target="d7303581510f6e6ffd5f340d765afce14590d5ef6bd02bd4f43f2af3b88ee442">
+      <data key="d4">2.78</data>
+    </edge>
+    <edge source="3d5d15601058b127f2ce5e802531386dcefe2a96857520c6704f1eb29b1eac82" target="c9afdf4fcf0d3d3253bd958a81fce1e4ad16aa95243fa14ac031a1156dd1c3b3">
+      <data key="d4">9.506</data>
+    </edge>
+    <edge source="3d5d15601058b127f2ce5e802531386dcefe2a96857520c6704f1eb29b1eac82" target="3104e7d7bffd44f2c3a793452b1ac35a42f6f409650f400b10e892a45fe85dd3">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="3d5d15601058b127f2ce5e802531386dcefe2a96857520c6704f1eb29b1eac82" target="8bc820e84bf53271f6038b200438c488666089e60d830c588c594560d602bdb7">
+      <data key="d4">2.775</data>
+    </edge>
+    <edge source="3d5d15601058b127f2ce5e802531386dcefe2a96857520c6704f1eb29b1eac82" target="b3d8d485fb7bad8aacb929da6f2ab2ab063ae9c9a35d6d3334777db13b0b8ace">
+      <data key="d4">1.298</data>
+    </edge>
+    <edge source="3d5d15601058b127f2ce5e802531386dcefe2a96857520c6704f1eb29b1eac82" target="9e332bab35be884b727cb30d0fd404d3a8f054d6b180ec7f5e0b4894fa366b24">
+      <data key="d4">6.656</data>
+    </edge>
+    <edge source="3d5d15601058b127f2ce5e802531386dcefe2a96857520c6704f1eb29b1eac82" target="5b502f34c453c21473d157c602d5a129213413e8f4a4a9529623e3407aff6a6d">
+      <data key="d4">3.956</data>
+    </edge>
+    <edge source="3d5d15601058b127f2ce5e802531386dcefe2a96857520c6704f1eb29b1eac82" target="f692b3d7571e424778b770dfe1d5664274b3c41a95ff5a7676b53188dd9fca76">
+      <data key="d4">5.748</data>
+    </edge>
+    <edge source="3d5d15601058b127f2ce5e802531386dcefe2a96857520c6704f1eb29b1eac82" target="3b0a1029a25de6fe5f86b5e08401cf3977ae8d6db9f726176615a532fd6986f2">
+      <data key="d4">1.524</data>
+    </edge>
+    <edge source="3d5d15601058b127f2ce5e802531386dcefe2a96857520c6704f1eb29b1eac82" target="5e2ea48248b3a5c323fe535525943721fd4cf44084a6b749b7c66871da215a7a">
+      <data key="d4">5.013</data>
+    </edge>
+    <edge source="fde9b48426ce32f984b475e8b457e4df672b2b955dd4a358864c37e530236698" target="5c14781b25b756745a07255c9ae1569efc0dee2f0dd7b39a5a4092afc59c46b1">
+      <data key="d4">1.045</data>
+    </edge>
+    <edge source="0ddf30827e6d4b6ba0688763445b2dcf2ae2d73f75b68871fafa432f99912d47" target="92d40d98ffcf06cf9e8c2771a99d2891b8c4f06b5f06ba59de7df45fc4b6909b">
+      <data key="d4">3.178</data>
+    </edge>
+    <edge source="53c27ed46cfc232686dede0dec7ca0ae81093c5da4e116d12b93cf71e119b2fc" target="1e109864b370912828bceabad9074188e63c422eaf47091f92bcd859c49649fb">
+      <data key="d4">1.474</data>
+    </edge>
+    <edge source="b8a88c21b6f4586615a8b0bb41a4db8d545ce16edf3440e9de5e949c041e218e" target="d4c2b3f0adcab3128059aa732ab16d2298552b0dd90957705aee67af9fbbc816">
+      <data key="d4">3.002</data>
+    </edge>
+    <edge source="453b5035eada7a95b7f4d6d004f1740ff4ccabc35682519b6791cb4242d104f5" target="f692b3d7571e424778b770dfe1d5664274b3c41a95ff5a7676b53188dd9fca76">
+      <data key="d4">1.177</data>
+    </edge>
+    <edge source="3104e7d7bffd44f2c3a793452b1ac35a42f6f409650f400b10e892a45fe85dd3" target="c0f0f17f85f4a7355a260312550e6e3a1bf8817155baacc2981e46cbc4331fa8">
+      <data key="d4">2.458</data>
+    </edge>
+    <edge source="3104e7d7bffd44f2c3a793452b1ac35a42f6f409650f400b10e892a45fe85dd3" target="046c56738fa90ce3c43069d835316d150a0878d5de9a6346ad3b57f481fbb1fc">
+      <data key="d4">1.278</data>
+    </edge>
+    <edge source="3104e7d7bffd44f2c3a793452b1ac35a42f6f409650f400b10e892a45fe85dd3" target="ed3a6d650812403345349ceb3e9c6bd77678b226bdf51aebbda3d51c3511734d">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="3104e7d7bffd44f2c3a793452b1ac35a42f6f409650f400b10e892a45fe85dd3" target="98bf3ff56ad2dc9fcbf32a67f2e170c58f3a2987d9c847ecdb7a9992b02da570">
+      <data key="d4">9.412</data>
+    </edge>
+    <edge source="3104e7d7bffd44f2c3a793452b1ac35a42f6f409650f400b10e892a45fe85dd3" target="12c24457e6c70a8c6d9866218dcf8baf3dd1f034b19ae17fa3c051163033f3a0">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="3104e7d7bffd44f2c3a793452b1ac35a42f6f409650f400b10e892a45fe85dd3" target="1e109864b370912828bceabad9074188e63c422eaf47091f92bcd859c49649fb">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="3104e7d7bffd44f2c3a793452b1ac35a42f6f409650f400b10e892a45fe85dd3" target="d8e46f20904e318cc5688aadb4d2cedeeaaab6099835c7805eeb153158ad805f">
+      <data key="d4">2.574</data>
+    </edge>
+    <edge source="3104e7d7bffd44f2c3a793452b1ac35a42f6f409650f400b10e892a45fe85dd3" target="92d40d98ffcf06cf9e8c2771a99d2891b8c4f06b5f06ba59de7df45fc4b6909b">
+      <data key="d4">5.912</data>
+    </edge>
+    <edge source="3104e7d7bffd44f2c3a793452b1ac35a42f6f409650f400b10e892a45fe85dd3" target="fd4808a344433e96ead5c8080ac32e3ffb70c7025f7b27af50ab30b12e2f0ae9">
+      <data key="d4">6.679</data>
+    </edge>
+    <edge source="3104e7d7bffd44f2c3a793452b1ac35a42f6f409650f400b10e892a45fe85dd3" target="9e332bab35be884b727cb30d0fd404d3a8f054d6b180ec7f5e0b4894fa366b24">
+      <data key="d4">2.533</data>
+    </edge>
+    <edge source="3104e7d7bffd44f2c3a793452b1ac35a42f6f409650f400b10e892a45fe85dd3" target="0dce3a55e52c7f7fa9343afa15c1c172f8f11febb21667ce97d41d68b52397fb">
+      <data key="d4">1.967</data>
+    </edge>
+    <edge source="3104e7d7bffd44f2c3a793452b1ac35a42f6f409650f400b10e892a45fe85dd3" target="82cee7b8114fd4d89f503624dee75b1c11f5d868c6b4e039b6e0b1520fd6af5b">
+      <data key="d4">4.054</data>
+    </edge>
+    <edge source="293b19f3ba9a4017bf890ef52d7a00e43156e3fe49f6231178a320f8662c4cc5" target="9c92ff1d3527a11aa914e64be0907178eb274d4544f3e755369356831837b0a4">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="293b19f3ba9a4017bf890ef52d7a00e43156e3fe49f6231178a320f8662c4cc5" target="3b0a1029a25de6fe5f86b5e08401cf3977ae8d6db9f726176615a532fd6986f2">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="293b19f3ba9a4017bf890ef52d7a00e43156e3fe49f6231178a320f8662c4cc5" target="1e109864b370912828bceabad9074188e63c422eaf47091f92bcd859c49649fb">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="293b19f3ba9a4017bf890ef52d7a00e43156e3fe49f6231178a320f8662c4cc5" target="a5189ea95a9c04903d662bffa293644c9065e0a4af69f47a5d57c67983f317b2">
+      <data key="d4">1.004</data>
+    </edge>
+    <edge source="72c60d22898191701cc13f5b60a91fd44d639dceea93eb2cc0fb397a2c6cd3c0" target="504fd6fe2929a2d92d292430b30a6c23b68256df080e12f0b8b7c66a053fbe89">
+      <data key="d4">1.434</data>
+    </edge>
+    <edge source="72c60d22898191701cc13f5b60a91fd44d639dceea93eb2cc0fb397a2c6cd3c0" target="7c9987606c96254611af4fcc912caeeeedd3b96b420245e9c86c18c6c7f05bf1">
+      <data key="d4">1.111</data>
+    </edge>
+    <edge source="63e53b8416f9c4fc3ffbebe83a851b694e4520809311b156a49141d80a64a8ed" target="645fd9af7570a08ac3f854f9119dc2a823ab9d69bec838582d600468ab12f34d">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="63e53b8416f9c4fc3ffbebe83a851b694e4520809311b156a49141d80a64a8ed" target="2ff99dc3f02ba2534d97dbb6293b70cf10aac9842beddd4d5074ed10e8080365">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="080a0b43bce9fe0736e80aaab34fb16c23091cd04c9d729a01f87508ff3734f4" target="12c24457e6c70a8c6d9866218dcf8baf3dd1f034b19ae17fa3c051163033f3a0">
+      <data key="d4">5.1</data>
+    </edge>
+    <edge source="a46d2fcaea0f363be880300384be0270b89ea1d7078a89dfa7173b2d99252f20" target="0ee07cde56cdfcaede62cbdb06ea6047ac0bc2debd5a96180981b16e3987f28c">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="f9362f5c7121dafd34e4473a4e9c9b034111d925a4e406814bb3f792ad87a35a" target="8aa388eaf87e7ad440fd1d2f15704135888be12a1247e34b85ed7d6af2f2d4fa">
+      <data key="d4">1.522</data>
+    </edge>
+    <edge source="54149c4b14fef17b551c4e67fde076c89438d1c2c8fe4632be7ee7fd31700b6d" target="f692b3d7571e424778b770dfe1d5664274b3c41a95ff5a7676b53188dd9fca76">
+      <data key="d4">1.626</data>
+    </edge>
+    <edge source="54149c4b14fef17b551c4e67fde076c89438d1c2c8fe4632be7ee7fd31700b6d" target="1ba6736eb3c33a5842b09fe9f359be2fcedfed06d906c5c023f54d8e13214345">
+      <data key="d4">1.83</data>
+    </edge>
+    <edge source="b141838f2b01ed89a1387a6ecf90840ddbe3ca9478bedbd8c30ecba5ea1db191" target="5e2ea48248b3a5c323fe535525943721fd4cf44084a6b749b7c66871da215a7a">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="4f28ca411b00aa9285b19268674d2b321722e583d56edee7a44bfc1f468c4cf6" target="9b4f8121bd3cbc1af5730d3a781936ac7452bfd78397ebd4f5df4a5637823806">
+      <data key="d4">1.605</data>
+    </edge>
+    <edge source="4f28ca411b00aa9285b19268674d2b321722e583d56edee7a44bfc1f468c4cf6" target="a554b35833e83631b2b84b9c9d78b886db2eb1f0f341de4fcfb6cdc67835d970">
+      <data key="d4">1.482</data>
+    </edge>
+    <edge source="4f28ca411b00aa9285b19268674d2b321722e583d56edee7a44bfc1f468c4cf6" target="e8bea890bf2754bc4ddcc353a3b651d3e7fd405fac80be90b28465c31c3ece1a">
+      <data key="d4">1.132</data>
+    </edge>
+    <edge source="45c0921d7e51dd45196cff7d6c513b9aedc5901e22b0183ce17a9d6233d71145" target="a554b35833e83631b2b84b9c9d78b886db2eb1f0f341de4fcfb6cdc67835d970">
+      <data key="d4">1.528</data>
+    </edge>
+    <edge source="45c0921d7e51dd45196cff7d6c513b9aedc5901e22b0183ce17a9d6233d71145" target="3468e5d106450f33f6013cf9d8a193fcc80543acffed2386dc61160967899cdf">
+      <data key="d4">1.256</data>
+    </edge>
+    <edge source="0efc868db5dd1912bfca750140ace1392947a2bba5e17a142019299a328a4404" target="f692b3d7571e424778b770dfe1d5664274b3c41a95ff5a7676b53188dd9fca76">
+      <data key="d4">1.312</data>
+    </edge>
+    <edge source="eca0aa9916e9d1556b48692d45e4f0a62b92dcfcf15de3857f883aaacd66d555" target="08885708afa9db973f15de75dea90401b55292e5f0b2cef5bd54a2539bd1d3e6">
+      <data key="d4">1.283</data>
+    </edge>
+    <edge source="a44c506f4554734fd031baac1ddb2ff683211bc0c76d1bde5453f332fcde4add" target="3e885910b8ac7e1c74f17e49405403e2869338a59e7fa74ff96954b45d3305ee">
+      <data key="d4">1.659</data>
+    </edge>
+    <edge source="5e2ea48248b3a5c323fe535525943721fd4cf44084a6b749b7c66871da215a7a" target="bc2d07c958cef73527eca71c98a3de1c070c0b1c79fb64d1f0bb677faf4f72c1">
+      <data key="d4">1.325</data>
+    </edge>
+    <edge source="5e2ea48248b3a5c323fe535525943721fd4cf44084a6b749b7c66871da215a7a" target="fe894a4485ec69bb32b80734f8317bcf4253ce4f998c4f89cdeeb9657bd62803">
+      <data key="d4">1.099</data>
+    </edge>
+    <edge source="5e2ea48248b3a5c323fe535525943721fd4cf44084a6b749b7c66871da215a7a" target="1e109864b370912828bceabad9074188e63c422eaf47091f92bcd859c49649fb">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="91ea1fa22d304c947d2d52ed8c2b942adddde874976a55fb8bc075a714f911b3" target="9c92ff1d3527a11aa914e64be0907178eb274d4544f3e755369356831837b0a4">
+      <data key="d4">1.536</data>
+    </edge>
+    <edge source="c202988e1efb2a08ad50f06845b2f6b08f3a0f196b35b8d397b382cc72922ecd" target="d69f0fc7f8a29ed9d4adb1f09b20d30640f6139ac8d1cd361fb4b6f65cd6c248">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="c202988e1efb2a08ad50f06845b2f6b08f3a0f196b35b8d397b382cc72922ecd" target="92d40d98ffcf06cf9e8c2771a99d2891b8c4f06b5f06ba59de7df45fc4b6909b">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="c202988e1efb2a08ad50f06845b2f6b08f3a0f196b35b8d397b382cc72922ecd" target="cd2770e9f7924684082f9a2926a2417649eb79271cf05e38e1fd1a5596877310">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="c202988e1efb2a08ad50f06845b2f6b08f3a0f196b35b8d397b382cc72922ecd" target="1e109864b370912828bceabad9074188e63c422eaf47091f92bcd859c49649fb">
+      <data key="d4">1.646</data>
+    </edge>
+    <edge source="dc654e74c264bd0084762e2082e514b4bb01301200ed4fdf7d6fc7b52f623187" target="e66db58b0ac09728d1ca2afd78983aae53598dad4b9f27e2af00e54b172db472">
+      <data key="d4">2.048</data>
+    </edge>
+    <edge source="92d40d98ffcf06cf9e8c2771a99d2891b8c4f06b5f06ba59de7df45fc4b6909b" target="fe170cd0b0b4be20ba657e9366da3458ab6451a9115f5adbe74782dc595a4a40">
+      <data key="d4">2.347</data>
+    </edge>
+    <edge source="92d40d98ffcf06cf9e8c2771a99d2891b8c4f06b5f06ba59de7df45fc4b6909b" target="d8e46f20904e318cc5688aadb4d2cedeeaaab6099835c7805eeb153158ad805f">
+      <data key="d4">1.916</data>
+    </edge>
+    <edge source="92d40d98ffcf06cf9e8c2771a99d2891b8c4f06b5f06ba59de7df45fc4b6909b" target="bc0992adeb886ac2e31c70a811aa4acc0d6d827f1b749a7633d6b0fbcb0824c6">
+      <data key="d4">1.575</data>
+    </edge>
+    <edge source="92d40d98ffcf06cf9e8c2771a99d2891b8c4f06b5f06ba59de7df45fc4b6909b" target="d723086130ef1c9c78cea2adc0bcb746b8d3b51310196a4b34d95827df073d97">
+      <data key="d4">1.966</data>
+    </edge>
+    <edge source="92d40d98ffcf06cf9e8c2771a99d2891b8c4f06b5f06ba59de7df45fc4b6909b" target="d69f0fc7f8a29ed9d4adb1f09b20d30640f6139ac8d1cd361fb4b6f65cd6c248">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="92d40d98ffcf06cf9e8c2771a99d2891b8c4f06b5f06ba59de7df45fc4b6909b" target="cd2770e9f7924684082f9a2926a2417649eb79271cf05e38e1fd1a5596877310">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="92d40d98ffcf06cf9e8c2771a99d2891b8c4f06b5f06ba59de7df45fc4b6909b" target="2f8835f1081e03f44885c9ff9b18d2bf2d3c44e877bf5b5aca9cc5648e37d9de">
+      <data key="d4">1.771</data>
+    </edge>
+    <edge source="d4c2b3f0adcab3128059aa732ab16d2298552b0dd90957705aee67af9fbbc816" target="b99d21dfad51622dd03bd3bc90c3935a9aa29d16f56b89696212505335d30f21">
+      <data key="d4">1.881</data>
+    </edge>
+    <edge source="d4c2b3f0adcab3128059aa732ab16d2298552b0dd90957705aee67af9fbbc816" target="fe170cd0b0b4be20ba657e9366da3458ab6451a9115f5adbe74782dc595a4a40">
+      <data key="d4">3.25</data>
+    </edge>
+    <edge source="d4c2b3f0adcab3128059aa732ab16d2298552b0dd90957705aee67af9fbbc816" target="ed3a6d650812403345349ceb3e9c6bd77678b226bdf51aebbda3d51c3511734d">
+      <data key="d4">1.182</data>
+    </edge>
+    <edge source="d4c2b3f0adcab3128059aa732ab16d2298552b0dd90957705aee67af9fbbc816" target="08885708afa9db973f15de75dea90401b55292e5f0b2cef5bd54a2539bd1d3e6">
+      <data key="d4">1.279</data>
+    </edge>
+    <edge source="d4c2b3f0adcab3128059aa732ab16d2298552b0dd90957705aee67af9fbbc816" target="1e109864b370912828bceabad9074188e63c422eaf47091f92bcd859c49649fb">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="d4c2b3f0adcab3128059aa732ab16d2298552b0dd90957705aee67af9fbbc816" target="e66db58b0ac09728d1ca2afd78983aae53598dad4b9f27e2af00e54b172db472">
+      <data key="d4">6.625</data>
+    </edge>
+    <edge source="d4c2b3f0adcab3128059aa732ab16d2298552b0dd90957705aee67af9fbbc816" target="fd4808a344433e96ead5c8080ac32e3ffb70c7025f7b27af50ab30b12e2f0ae9">
+      <data key="d4">2.153</data>
+    </edge>
+    <edge source="d4c2b3f0adcab3128059aa732ab16d2298552b0dd90957705aee67af9fbbc816" target="3c445fa994b9ea626870033f13808ae47c8aabb490cfa4cc7acc543ac94af214">
+      <data key="d4">1.468</data>
+    </edge>
+    <edge source="1ba6736eb3c33a5842b09fe9f359be2fcedfed06d906c5c023f54d8e13214345" target="f692b3d7571e424778b770dfe1d5664274b3c41a95ff5a7676b53188dd9fca76">
+      <data key="d4">1.776</data>
+    </edge>
+    <edge source="ed3a6d650812403345349ceb3e9c6bd77678b226bdf51aebbda3d51c3511734d" target="e66db58b0ac09728d1ca2afd78983aae53598dad4b9f27e2af00e54b172db472">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="ed3a6d650812403345349ceb3e9c6bd77678b226bdf51aebbda3d51c3511734d" target="3c445fa994b9ea626870033f13808ae47c8aabb490cfa4cc7acc543ac94af214">
+      <data key="d4">1.762</data>
+    </edge>
+    <edge source="ed3a6d650812403345349ceb3e9c6bd77678b226bdf51aebbda3d51c3511734d" target="a554b35833e83631b2b84b9c9d78b886db2eb1f0f341de4fcfb6cdc67835d970">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="b83789f61811a2734493bf6c1bdf1a7afcad7f96804b86e890da7606a3d782ae" target="f692b3d7571e424778b770dfe1d5664274b3c41a95ff5a7676b53188dd9fca76">
+      <data key="d4">1.716</data>
+    </edge>
+    <edge source="0ee07cde56cdfcaede62cbdb06ea6047ac0bc2debd5a96180981b16e3987f28c" target="a554b35833e83631b2b84b9c9d78b886db2eb1f0f341de4fcfb6cdc67835d970">
+      <data key="d4">1.513</data>
+    </edge>
+    <edge source="0ee07cde56cdfcaede62cbdb06ea6047ac0bc2debd5a96180981b16e3987f28c" target="645fd9af7570a08ac3f854f9119dc2a823ab9d69bec838582d600468ab12f34d">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="bc2d07c958cef73527eca71c98a3de1c070c0b1c79fb64d1f0bb677faf4f72c1" target="5a20cefc42db6d80de916283242e6cba464b3d6af1ae707546d3cca3305a7b2e">
+      <data key="d4">2.46</data>
+    </edge>
+    <edge source="504fd6fe2929a2d92d292430b30a6c23b68256df080e12f0b8b7c66a053fbe89" target="f692b3d7571e424778b770dfe1d5664274b3c41a95ff5a7676b53188dd9fca76">
+      <data key="d4">1.563</data>
+    </edge>
+    <edge source="a5189ea95a9c04903d662bffa293644c9065e0a4af69f47a5d57c67983f317b2" target="5a1bfe3f272afa49630c9add572bd12d4fdcfe3852efb663f7fea9ba47856c72">
+      <data key="d4">1.206</data>
+    </edge>
+    <edge source="a5189ea95a9c04903d662bffa293644c9065e0a4af69f47a5d57c67983f317b2" target="cae880f252659c404e7513addc9a2cbb9a3067fbc3e67c4bc958cbf976d8e3fb">
+      <data key="d4">1.511</data>
+    </edge>
+    <edge source="9c92ff1d3527a11aa914e64be0907178eb274d4544f3e755369356831837b0a4" target="65026daeca14e6150097e70f33b1d6d25f7e454d776567919d788c631a298372">
+      <data key="d4">1.363</data>
+    </edge>
+    <edge source="9c92ff1d3527a11aa914e64be0907178eb274d4544f3e755369356831837b0a4" target="5c14781b25b756745a07255c9ae1569efc0dee2f0dd7b39a5a4092afc59c46b1">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="9c92ff1d3527a11aa914e64be0907178eb274d4544f3e755369356831837b0a4" target="8fd9edccfb43afacb1c40dc28581cb623bc91950667f0c0ab9b06938e6d9dc93">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="9c92ff1d3527a11aa914e64be0907178eb274d4544f3e755369356831837b0a4" target="1e109864b370912828bceabad9074188e63c422eaf47091f92bcd859c49649fb">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="9c92ff1d3527a11aa914e64be0907178eb274d4544f3e755369356831837b0a4" target="3e885910b8ac7e1c74f17e49405403e2869338a59e7fa74ff96954b45d3305ee">
+      <data key="d4">1.781</data>
+    </edge>
+    <edge source="9c92ff1d3527a11aa914e64be0907178eb274d4544f3e755369356831837b0a4" target="3b0a1029a25de6fe5f86b5e08401cf3977ae8d6db9f726176615a532fd6986f2">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="9c92ff1d3527a11aa914e64be0907178eb274d4544f3e755369356831837b0a4" target="783b3acb56a6d68a19f9d525d3a6239b646d9ea8078e875509debbb7ef6983ae">
+      <data key="d4">4.115</data>
+    </edge>
+    <edge source="d7303581510f6e6ffd5f340d765afce14590d5ef6bd02bd4f43f2af3b88ee442" target="c9afdf4fcf0d3d3253bd958a81fce1e4ad16aa95243fa14ac031a1156dd1c3b3">
+      <data key="d4">1.827</data>
+    </edge>
+    <edge source="d7303581510f6e6ffd5f340d765afce14590d5ef6bd02bd4f43f2af3b88ee442" target="104fcc2695640482fb21059a2962e4016dffcb017649189a8676423ac4d2abab">
+      <data key="d4">1.692</data>
+    </edge>
+    <edge source="d7303581510f6e6ffd5f340d765afce14590d5ef6bd02bd4f43f2af3b88ee442" target="1551e9ab3503cdecb93c003a348d2d12709702cae425242c632e0084ce6c8b26">
+      <data key="d4">2.25</data>
+    </edge>
+    <edge source="2b5b7a15907e154a005f3706a61ce059529c210dbee5f3b3dfaa533def117b76" target="1e109864b370912828bceabad9074188e63c422eaf47091f92bcd859c49649fb">
+      <data key="d4">1.932</data>
+    </edge>
+    <edge source="1e109864b370912828bceabad9074188e63c422eaf47091f92bcd859c49649fb" target="6ef51430dff451a4bd5d24309282150820b086c0efed17a782ca77c7c894f25d">
+      <data key="d4">1.444</data>
+    </edge>
+    <edge source="1e109864b370912828bceabad9074188e63c422eaf47091f92bcd859c49649fb" target="3b0a1029a25de6fe5f86b5e08401cf3977ae8d6db9f726176615a532fd6986f2">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="d69f0fc7f8a29ed9d4adb1f09b20d30640f6139ac8d1cd361fb4b6f65cd6c248" target="fe170cd0b0b4be20ba657e9366da3458ab6451a9115f5adbe74782dc595a4a40">
+      <data key="d4">2.017</data>
+    </edge>
+    <edge source="d69f0fc7f8a29ed9d4adb1f09b20d30640f6139ac8d1cd361fb4b6f65cd6c248" target="cd2770e9f7924684082f9a2926a2417649eb79271cf05e38e1fd1a5596877310">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="d69f0fc7f8a29ed9d4adb1f09b20d30640f6139ac8d1cd361fb4b6f65cd6c248" target="d723086130ef1c9c78cea2adc0bcb746b8d3b51310196a4b34d95827df073d97">
+      <data key="d4">2.196</data>
+    </edge>
+    <edge source="d69f0fc7f8a29ed9d4adb1f09b20d30640f6139ac8d1cd361fb4b6f65cd6c248" target="8186106d590bf5a186dd332233fb07cbcc082bc3503c90104a90601ed89e1a79">
+      <data key="d4">6.315</data>
+    </edge>
+    <edge source="f692b3d7571e424778b770dfe1d5664274b3c41a95ff5a7676b53188dd9fca76" target="a554b35833e83631b2b84b9c9d78b886db2eb1f0f341de4fcfb6cdc67835d970">
+      <data key="d4">1.18</data>
+    </edge>
+    <edge source="f692b3d7571e424778b770dfe1d5664274b3c41a95ff5a7676b53188dd9fca76" target="7c9987606c96254611af4fcc912caeeeedd3b96b420245e9c86c18c6c7f05bf1">
+      <data key="d4">2.035</data>
+    </edge>
+    <edge source="c1b54f6fa3255ecc87713c365775fa22a4086048104a39d646c5fb95cd0ef61b" target="a554b35833e83631b2b84b9c9d78b886db2eb1f0f341de4fcfb6cdc67835d970">
+      <data key="d4">1.177</data>
+    </edge>
+    <edge source="d7bf6847e0d1359e1f373499a3fb8533b68262bf905dcebf6bd117ac8cde8b22" target="a554b35833e83631b2b84b9c9d78b886db2eb1f0f341de4fcfb6cdc67835d970">
+      <data key="d4">1.477</data>
+    </edge>
+    <edge source="a554b35833e83631b2b84b9c9d78b886db2eb1f0f341de4fcfb6cdc67835d970" target="93974c53e624ce220640cdc3437f105b41c1194d72c831b0e76fa90ed7d2e57f">
+      <data key="d4">1.658</data>
+    </edge>
+    <edge source="a554b35833e83631b2b84b9c9d78b886db2eb1f0f341de4fcfb6cdc67835d970" target="3468e5d106450f33f6013cf9d8a193fcc80543acffed2386dc61160967899cdf">
+      <data key="d4">1.371</data>
+    </edge>
+    <edge source="a554b35833e83631b2b84b9c9d78b886db2eb1f0f341de4fcfb6cdc67835d970" target="198201cbea062e51a46c0a63e726bc2f4bea99e1112f5a6f5386a4bf0613b532">
+      <data key="d4">1.479</data>
+    </edge>
+    <edge source="8aa388eaf87e7ad440fd1d2f15704135888be12a1247e34b85ed7d6af2f2d4fa" target="1551e9ab3503cdecb93c003a348d2d12709702cae425242c632e0084ce6c8b26">
+      <data key="d4">2.646</data>
+    </edge>
+    <edge source="c9afdf4fcf0d3d3253bd958a81fce1e4ad16aa95243fa14ac031a1156dd1c3b3" target="104fcc2695640482fb21059a2962e4016dffcb017649189a8676423ac4d2abab">
+      <data key="d4">1.831</data>
+    </edge>
+    <edge source="c9afdf4fcf0d3d3253bd958a81fce1e4ad16aa95243fa14ac031a1156dd1c3b3" target="1551e9ab3503cdecb93c003a348d2d12709702cae425242c632e0084ce6c8b26">
+      <data key="d4">2.321</data>
+    </edge>
+    <edge source="e66db58b0ac09728d1ca2afd78983aae53598dad4b9f27e2af00e54b172db472" target="35fd6bfcefd99161f5aaa14f396b7393691060c5e19cba5c6c3cd60a7add506b">
+      <data key="d4">2.306</data>
+    </edge>
+    <edge source="e66db58b0ac09728d1ca2afd78983aae53598dad4b9f27e2af00e54b172db472" target="8186106d590bf5a186dd332233fb07cbcc082bc3503c90104a90601ed89e1a79">
+      <data key="d4">5.383</data>
+    </edge>
+    <edge source="e66db58b0ac09728d1ca2afd78983aae53598dad4b9f27e2af00e54b172db472" target="a7d5e322d48c94c8e2ee9ea5abbfc98f05e8bd90be2215f72ffb9e774aab5e35">
+      <data key="d4">6.425</data>
+    </edge>
+    <edge source="fe170cd0b0b4be20ba657e9366da3458ab6451a9115f5adbe74782dc595a4a40" target="8186106d590bf5a186dd332233fb07cbcc082bc3503c90104a90601ed89e1a79">
+      <data key="d4">3.119</data>
+    </edge>
+    <edge source="5c14781b25b756745a07255c9ae1569efc0dee2f0dd7b39a5a4092afc59c46b1" target="95a4ae7a6390b258a4db7e7026bdac62e409609a5b7d1135df4f168ff3c95f20">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="5c14781b25b756745a07255c9ae1569efc0dee2f0dd7b39a5a4092afc59c46b1" target="bd4baf5c458e6a613483e8eee6ebca47ce4266d84adc5d5e98ddc3d1e877999f">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="6ef51430dff451a4bd5d24309282150820b086c0efed17a782ca77c7c894f25d" target="9e332bab35be884b727cb30d0fd404d3a8f054d6b180ec7f5e0b4894fa366b24">
+      <data key="d4">2.993</data>
+    </edge>
+    <edge source="12c24457e6c70a8c6d9866218dcf8baf3dd1f034b19ae17fa3c051163033f3a0" target="bd4baf5c458e6a613483e8eee6ebca47ce4266d84adc5d5e98ddc3d1e877999f">
+      <data key="d4">9.106</data>
+    </edge>
+    <edge source="12c24457e6c70a8c6d9866218dcf8baf3dd1f034b19ae17fa3c051163033f3a0" target="561f07cb8907e59096f6061731a8d0891f67fac785dcb694ba6161e970fb3c0d">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="95a4ae7a6390b258a4db7e7026bdac62e409609a5b7d1135df4f168ff3c95f20" target="bd4baf5c458e6a613483e8eee6ebca47ce4266d84adc5d5e98ddc3d1e877999f">
+      <data key="d4">1.0</data>
+    </edge>
+    <edge source="d8e46f20904e318cc5688aadb4d2cedeeaaab6099835c7805eeb153158ad805f" target="9e332bab35be884b727cb30d0fd404d3a8f054d6b180ec7f5e0b4894fa366b24">
+      <data key="d4">2.188</data>
+    </edge>
+  </graph>
+</graphml>
