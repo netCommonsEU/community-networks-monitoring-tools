@@ -16,3 +16,7 @@ Contains network topology and community analysis tools. All the code was produce
 The tests folder contains simple code for you to test some basic functions and the testdata folder contains the required data.
 
 Note the repo pulls code from two more repos, so execute `git submodule init; git submodule update` after checkout
+
+# Known Issues
+
+This code was generated in different moments, so it needs some work to make the style homogenous (which is not at the time). It was tested for graphs up to hundreds of nodes, so it focuses most on readability than efficiency.
