@@ -28,7 +28,7 @@ The simple test_main.py is an example main that takes two input values, one mbox
 
 This will translate every "From:" field matching "mail@leonardo.ma (Leonardo Maccari)" to the value "\"Leonardo\" <l@leonardo.ma>". It is useful when multiple From field correspond to the same person and you want to merge them in a single entity. You don't have to create the alis file by hand, check the diffFrom module. If you want to ignore it, just put a file containing "{}".
 
-If you want to test the code, the folder testdata/ contains a small mbox file from a public mailing list of the ninux community network. The email addresses contained in the mbox are modified by mailman in order to prevent spammers to automatically fetch them. The scripts/convert_email.sh script will convert back the addresses to a normal address. Run it before running the parser. **Please do not push the converted mbox archive to any public repository**.
+If you want to test the code, the folder testdata/ contains a small mbox file from a public mailing list of the ninux community network. The email addresses contained in the mbox are modified by mailman in order to prevent spammers to automatically fetch them. The scripts/convert_email.sh script will convert back the addresses to a normal address and create another file with the antismap modification removed. Run it before running the parser. **Please do not push the converted mbox archive to any public repository**.
 
 So you can finally run:
     ./test_mailing_list.py
