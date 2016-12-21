@@ -31,5 +31,5 @@ This will translate every "From:" field matching "mail@leonardo.ma (Leonardo Mac
 If you want to test the code, the folder testdata/ contains a small mbox file from a public mailing list of the ninux community network. The email addresses contained in the mbox are modified by mailman in order to prevent spammers to automatically fetch them. The scripts/convert_email.sh script will convert back the addresses to a normal address. Run it before running the parser. **Please do not push the converted mbox archive to any public repository**.
 
 So you can finally run:
-    ./mbparse.py ../testdata/wireless-12-2016.txt testdata/aliases.xml and see the results.
+    ./test_mailing_list.py
  
